@@ -49,14 +49,14 @@ function riddleSolver(board){
             }
         }
 
-        for (let j = 0 ; j < board.length; j++){
+        for (let j = 0 ; j < board[0].length; j++){
             currentNumber = board[0][j];
             counter = 0;
-            for (let i = 0 ; i < board[j].length; i++){
+            for (let i = 0 ; i < board.length; i++){
                 if(currentNumber === board[i][j] && currentNumber !== 0){
                     counter++;   
                 }
-                if(counter >= 3 && (i+1 < board[i].length ? board[i+1][j] !== currentNumber : true)){
+                if(counter >= 3 && (i+1 < board.length ? board[i+1][j] !== currentNumber : true)){
                     this.putZerosVertically(j,i, counter);
                     changed = true; 
                     counter = 1;
@@ -71,13 +71,4 @@ function riddleSolver(board){
     return board;
 }
 
-
-const board = [
-    [ 7, 7, 7, 5, 1, 7 ],
-    [ 1, 8, 1, 1, 1, 1 ],
-    [ 3, 2, 3, 9, 7, 6 ],
-    [ 9, 9, 3, 3, 6, 2 ],
-    [ 1, 9, 3, 1, 8, 7 ],
-    [ 5, 9, 2, 2, 4, 8 ]
-    ];
-    console.log(riddleSolver(board));
+module.export = riddleSolver;
