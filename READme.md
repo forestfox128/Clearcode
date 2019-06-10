@@ -44,7 +44,7 @@ Example call of the function can be found in `main.js`.
 
 ##### Arguments
 
-- board -> two dimensional array
+- board: two dimensional array
 
 Below there is a example of the matrix which  is a param of `riddleSolver` function:
 
