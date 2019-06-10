@@ -71,4 +71,4 @@ function riddleSolver(board){
     return board;
 }
 
-module.export = riddleSolver;
+module.exports = riddleSolver;
