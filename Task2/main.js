@@ -9,5 +9,5 @@ const board = [
     [ 1, 9, 3, 1, 8, 7 ],
     [ 5, 9, 2, 2, 4, 8 ]
 ];
-
+console.log(typeof(board))
 console.log(riddleSolver(board));  

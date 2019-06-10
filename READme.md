@@ -42,6 +42,12 @@ The solution is as simple as possible. I'm checking if there are any three or mo
 
 Example call of the function can be found in `main.js`.
 
+##### Arguments
+
+- board -> two dimensional array
+
+Below there is a example of the matrix which  is a param of `riddleSolver` function:
+
 ![before](./assets/before.png)
 
 #### Result
