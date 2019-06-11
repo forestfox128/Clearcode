@@ -1,4 +1,4 @@
-# Frontend Clearcode intern summer 2019 tasks
+# Frontend intern summer 2019 tasks
 
 ## Task 1
 
